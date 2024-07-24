@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('../public/bg.webp');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h2, h4, h6 {
+  color: white;
+  margin: 20px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px; /* Increased max width */
+}
+
+input[type="file"],
+input[type="email"] {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+input[type="file"]:focus,
+input[type="email"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px 5px; /* Add margin for spacing between buttons */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 600px; /* Increased max width */
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+li span {
+  flex: 1;
+  color: white;
+}
+
+li input {
+  margin-left: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+li input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+p {
+  margin-top: 20px;
+  color: #28a745;
+  font-weight: bold;
+}
+
+
+div > button {
+  margin-top: 10px;
+}
+
+.Snackbar {
+  width: 100%;
+  max-width: 600px; /* Increased max width */
+}
+
+/* Adjustments for spacing between specific buttons */
+button + button {
+  margin-left: 10px; /* Add margin between buttons */
+}
+
+.sender-email-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.sender-email-container input {
+  flex: 1;
+}
+
+.sender-email-container button {
+  margin-left: 10px;
+}
+
+.edit-button-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.edit-button-container span {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.edit-button-container button {
+  margin-left: 10px;
+}
