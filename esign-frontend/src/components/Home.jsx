@@ -66,7 +66,7 @@ function App() {
         formData.append('senderEmail', senderEmail);
 
         try {
-            const response = await axios.post('http://localhost:5000/api/documents/upload', formData);
+            const response = await axios.post('https://esign-backend-x620.onrender.com/api/documents/upload', formData);
             setDocuments([...documents, response.data.document]);
             setFile(null);
             setEmail('');
@@ -90,7 +90,7 @@ function App() {
 
         setLoading(true); // Start loading
         try {
-            const response = await axios.post('http://localhost:5000/api/documents/send', { documents });
+            const response = await axios.post('https://esign-backend-x620.onrender.com/api/documents/send', { documents });
             setSnackbarMessage(response.data.message);
             setSnackbarSeverity('success');
             setSnackbarOpen(true);
